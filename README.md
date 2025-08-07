@@ -10,7 +10,7 @@ Ein schlankes Docker-Image für [Webmin](https://www.webmin.com/) auf Basis von 
 - Installiert direkt Webmin über offizielles Repo
 - Inklusive `iproute2` für Netzwerkmodule
 - Root-Login beim ersten Start vorkonfiguriert (`root` / `rootpass`)
-- Docker Compose mit persistenten Volumes
+- Docker Compose mit persistenter Konfiguration
 
 ---
 
@@ -56,7 +56,7 @@ ports:
   - "10000:10000" # Webmin UI
 ```
 
-Netzwerk: `sofahaus` (custom bridge)
+Netzwerk: `webmin-net` (custom bridge)
 
 ---
 
@@ -90,5 +90,4 @@ docker push capo42/webmin:latest
 
 ## 🧙‍♂️ Maintainer
 
-**Capo42** aka [Michele Capobianco](https://github.com/capo42)
-
+**capo42** – [github.com/capo42](https://github.com/capo42)
